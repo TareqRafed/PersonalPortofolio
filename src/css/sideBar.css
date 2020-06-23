@@ -1,0 +1,46 @@
+.menu{
+    position: fixed;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+.menu > img {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    left: 0px;
+}
+.open{
+    width:100%;
+}
+.closed{
+    width:0%;
+    opacity: 0;
+}
+
+.sideBar > div{
+    z-index: 2;
+    transition: ease-in-out 0.5s all;
+    position: absolute;
+    top:0;
+    left:0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1BA098;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.sideBar >div> a {
+    color:#051622;
+   margin: 30px;
+    padding: 16px;
+    text-align: center;
+    display: block;
+}
+
+.sideBar > div > a:hover{
+    cursor: pointer;
+    background-color:#0E514C;
+}

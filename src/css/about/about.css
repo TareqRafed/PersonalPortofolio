@@ -1,0 +1,14 @@
+.about{
+    position: relative;
+    top:100px;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    z-index: 1;
+    user-select: none;
+}
+
+.changeColorLetter:hover{
+    font-family: 'Courier New', Courier, monospace;
+    color: #1BA098;
+
+}
