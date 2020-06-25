@@ -1,16 +1,35 @@
 body{
-    box-sizing: content-box;
+
+    overflow-x:hidden;   /* to cancel scroll on animation */
 }
 .projects{
-    background-color: white;
+    background-color: #051622;
     height: 100vh;
     margin: 0;
 }
+
+.headline {
+    overflow-x:hidden;  
+    height: 100px;
+    color: white;
+    background-color: #051622;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 50px;
+}
+.headline > h2 {
+    position: relative;
+    top:25%;
+}
+
+
 
 .projects > div {
     position: relative;
     top:20%;
 }
+
+
 
 .slider{
     cursor: grab;

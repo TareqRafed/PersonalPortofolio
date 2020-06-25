@@ -9,6 +9,7 @@ import Projects from './projects.js'
 function App() {
   return (
     <div className="App">
+      
       <Header />
       <MenuButton />
       <About />

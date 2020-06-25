@@ -1,28 +1,31 @@
-.about{
+.about {
     position: relative;
-    top:0;
+    top: 0;
     width: 50%;
     margin: 0 auto 0 auto;
     z-index: 1;
     user-select: none;
     height: 100vh;
     overflow: hidden;
-}
-.about > div {
-    position: relative;
-    top:150px;
+    
+    
 }
 
-@media (max-width:768px){
-    .about > div {
+.about>div {
+    position: relative;
+    top: 150px;
+}
+
+@media (max-width:768px) {
+    .about>div {
         position: relative;
-        top:30px;
+        top: 30px;
         font-size: small;
     }
 }
 
-.changeColorLetter:hover{
+.changeColorLetter:hover {
     font-family: 'Courier New', Courier, monospace;
     color: #1BA098;
-
+    cursor: pointer;
 }
