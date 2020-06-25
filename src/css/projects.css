@@ -1,0 +1,40 @@
+body{
+    box-sizing: content-box;
+}
+.projects{
+    background-color: white;
+    height: 100vh;
+    margin: 0;
+}
+
+.projects > div {
+    position: relative;
+    top:20%;
+}
+
+.slider{
+    cursor: grab;
+    margin: 0 auto 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    height: 40vh;
+    overflow: scroll;
+}
+.slider:active{
+    cursor: grabbing;
+}
+
+@media (max-width:768px){
+    .slider {
+        width: 100%;
+    }
+}
+
+
+.box{
+    background-color: rgb(23, 160, 152);
+    min-width:40%;
+    height: 100%;
+    margin: 0 10px 0 10px;
+}
