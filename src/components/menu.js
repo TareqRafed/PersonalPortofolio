@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import MenuIcon from "../assets/menu.png";
-import '../css/sideBar.css';
+import '../css/header/sideBar.css';
 function MenuButton(props) {
     const [isOpen, setIsOpen] = useState(false);
     const handleClick = () => {
