@@ -11,7 +11,7 @@ function Projects(props) {
             
             
             <div className="headline">
-            <ScrollAnimation animateIn='bounceInRight' animateOut='bounceOutLeft'>
+            <ScrollAnimation animateIn='bounceInRight'>
             <h2>{animateText("Check out!")}</h2>
             </ ScrollAnimation>
             </div>

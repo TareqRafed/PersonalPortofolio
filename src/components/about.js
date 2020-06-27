@@ -19,7 +19,7 @@ function About(props) {
             <h1 className="bounce text-white">{animateText("A web developer.")}</h1>
             </div>
             <div>
-            <p className="text-muted bounce mt-5 ">Fullstack Developer/ Mobile apps developer</p>
+            <p className="secondary-color-text bounce mt-5 ">Fullstack Developer/ Mobile apps developer</p>
             </div>
             <div >
             <p className="text-white mt-5 ">{myBio}</p>

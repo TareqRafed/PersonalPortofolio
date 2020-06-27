@@ -1,36 +1,50 @@
 import React from 'react';
 import '../css/contact.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function Contact(props) {
     return <div className="contact">
-        <div className="contact-me-form">
-            <form>
-                <div className="input">
-                    <input placeholder="Name:" type="text">
-                    </input>
-                </div>
-                <div className="input">
-                    <input placeholder="E-mail:" type="text">
-                    </input>
-                </div>
-                <div className="input">
-                    <input placeholder="Subject:" type="text">
-                    </input>
-                </div>
-                <div className="input">
-                    <textarea placeholder="Get in touch!">
-                    </textarea>
-                </div>
-            </form>
-            <button type="button">Submit!</button>
-            <div>
-                <h3 className="">
+        <div className="container">
+        <ScrollAnimation animateIn='fadeIn'>
+        
+            <div className="d-lg-none text-white">
+                <h3>
                     Want to work with me?
                 </h3>
+                <p>
+                    Get in touch. Send a general message or details of a project you'd like me to be a part of and I'll get back to you as soon as possible.
+                </p>
             </div>
-        </div>
-        <div className="footer">
-
+            <div className="contact-me-form">
+                <form>
+                    <div className="input">
+                        <input placeholder="Name:" type="text">
+                        </input>
+                    </div>
+                    <div className="input">
+                        <input placeholder="E-mail:" type="text">
+                        </input>
+                    </div>
+                    <div className="input">
+                        <input placeholder="Subject:" type="text">
+                        </input>
+                    </div>
+                    <div className="input">
+                        <textarea placeholder="Get in touch!">
+                        </textarea>
+                    </div>
+                </form>
+                <button type="button">Submit!</button>
+                <div className="contact-text">
+                    <h3>
+                        Want to work with me?
+                </h3>
+                    <p>
+                        Get in touch. Send a general message or details of a project you'd like me to be a part of and I'll get back to you as soon as possible.
+                </p>
+                </div>
+            </div>
+            </ScrollAnimation>
         </div>
     </div>
 }

@@ -2,7 +2,12 @@
   --main-color:rgba(5, 22, 34);
   --secondary-color: rgba(23, 160, 152);
 }
-
+.main-color-text{
+  color:var(--main-color);
+}
+.secondary-color-text{
+  color:var(--secondary-color);
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

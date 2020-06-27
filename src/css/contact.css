@@ -3,9 +3,14 @@
     height: 100vh;
 }
 
+.container{
+    position: relative;
+    top:10%;
+}
+
 .contact-me-form{
     position:relative;
-    top:20%;
+    top:5%;
     margin: 0 auto 0 auto;
     width: 70%;
     height: 50%;
@@ -26,6 +31,7 @@
     background-color: var(--main-color);
     color:var(--secondary-color);
     width:100%;
+    resize: none;
 }
 
 .input > textarea {
@@ -35,16 +41,36 @@
 .contact-me-form > button {
     border:none;
     position: absolute;
-    bottom: 0px;
+    bottom: -20%;
     left: 20px;
     width: 50%;
     background-color: var(--secondary-color);
     color: white;
 }
-.contact-me-form > div > h3 {
+.contact-me-form > .contact-text {
     color: white;
-    position: relative;
-    right: 0;
-    top: 0;
-    background-color: red;
+    position: absolute;
+    width: 40%;
+    right: 0px;
+    top: 10%;
+    overflow: hidden;
+}
+
+.contact-me-form > div > h3 {
+    font-size: 2vw;
+}
+.contact-me-form > div > p {
+    font-size: 1vw;
+}
+
+/* for phones */
+
+@media (max-width:988px){
+    .contact-me-form,.contact-me-form > button, .input {
+        width: 90%;
+    }
+    .contact-text{
+        display: none;
+
+    }
 }
