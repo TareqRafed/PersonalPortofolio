@@ -1,9 +1,11 @@
 import React from 'react';
 import '../css/contact.css';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { useRef } from 'react';
 
 function Contact(props) {
-    return <div className="contact">
+    const contactRef = useRef();
+    return <div ref={contactRef} className="contact">
         <div className="container">
         <ScrollAnimation animateIn='fadeIn'>
         

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import ScrollContainer from 'react-indiana-drag-scroll'
 import '../css/projects.css';
 import {animateText} from "./effects/effect.js";
@@ -6,7 +6,8 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 
 function Projects(props) {
-    return <div className="projects">
+    const projectsRef = useRef();
+    return <div ref={projectsRef} className="projects">
         <div>
             
             

@@ -7,8 +7,13 @@
     user-select: none;
     height: 100vh;
     overflow: hidden;
-    
-    
+
+}
+.fixed-div{
+    height: 6vw;
+}
+.fixed-div > h1 {
+    font-size: 6.2vw;
 }
 
 .about>div {
@@ -19,7 +24,7 @@
 @media (max-width:768px) {
     .about>div {
         position: relative;
-        top: 30px;
+        top: 15%;
         font-size: small;
     }
 }

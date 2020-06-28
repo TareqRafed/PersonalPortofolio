@@ -2,16 +2,17 @@ import React from 'react';
 import '../css/header/header.css';
 function Header(props) {
     return (
+        
         <div className="header d-none d-lg-block">
             <ul>
                 <li>
-                    <a>About me</a>
+                    <a onClick={() => props.scrollTo("about")}>About me</a>
                 </li>
                 <li>
-                    <a>Projects</a>
+                    <a onClick={() => props.scrollTo("projects")}>Projects</a>
                 </li>
                 <li>
-                    <a>Contact me</a>
+                    <a onClick={() => props.scrollTo("contact")}>Contact me</a>
                 </li>
             </ul>
         </div>

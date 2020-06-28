@@ -14,7 +14,7 @@ function MenuButton(props) {
             <img src={MenuIcon} onClick={handleClick()} ></img>    
         </div> 
     
-        <div className="sideBar"><Menu isOpen={isOpen} handeClick={handleClick()}  /> </div>
+        <div className="sideBar"><Menu scrollTo={props.scrollTo} isOpen={isOpen} handeClick={handleClick()}  /> </div>
         
        
         
@@ -24,12 +24,16 @@ function MenuButton(props) {
 }
 
 function Menu(props){
+    const handleMenuClick = (position) => { 
+        position && props.scrollTo(position);
+        props.handeClick();
+    }
     return(
         <div className={props.isOpen ? "open":"closed"}>
-        <a href="#">About me</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact me</a>
-        <a onClick={() => props.handeClick()}  href="#">X</a>
+        <a onClick={() => handleMenuClick("about")}>About me</a>
+        <a onClick={() => handleMenuClick("projects")}>Projects</a>
+        <a onClick={() => handleMenuClick("contact")}>Contact me</a>
+        <a onClick={() => handleMenuClick()}>X</a>
         </div>
     );
 }
