@@ -39,7 +39,7 @@ function App() {
     <div className="App">
       <Header  scrollTo={(position) =>handleClick(position)} />
       <MenuButton scrollTo={(position) =>handleClick(position)} />
-      <About />
+      <About scrollTo={(position) =>handleClick(position)} />
       <Projects />
       <Contact />
     </div>

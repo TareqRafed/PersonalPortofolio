@@ -13,7 +13,19 @@
     height: 6vw;
 }
 .fixed-div > h1 {
-    font-size: 6.2vw;
+    font-size: 3vw;
+}
+
+@media (max-width:768px){
+    .fixed-div:first-child{
+        height:50px;
+    }
+    .fixed-div{
+        height:90px;
+    }
+    .fixed-div > h1  {
+        font-size: 30px;
+    }
 }
 
 .about>div {
@@ -33,4 +45,16 @@
     font-family: 'Courier New', Courier, monospace;
     color: #1BA098;
     cursor: pointer;
+}
+
+.arrow-down{
+    cursor: pointer;
+    filter: invert(100%);
+  -webkit-filter: invert(100%);
+    width: 100px;
+    height: auto;
+    animation: bounce 1.5s infinite; 
+    -webkit-animation: bounce 1.5s infinite; 
+    -moz-animation: bounce 1.5s infinite; 
+    -o-animation: bounce 1.5s infinite; 
 }

@@ -3,7 +3,7 @@ import "../css/about/about.css"
 import "../css/about/bounce.css";
 import { animateText } from "./effects/effect.js";
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import Arrow from "../assets/arrow-down.png";
 
 
 
@@ -20,13 +20,17 @@ function About(props) {
                     <h1 className="bounce text-white">{animateText("Hey I'm Tareq ;)")}</h1>
                 </div>
                 <div className="fixed-div">
-                    <h1 className="bounce text-white">{animateText("A web developer.")}</h1>
+                    <h1 className="bounce text-white">{animateText("I build amazing experiences")}</h1>
                 </div>
                 <div className="mt-2">
                     <p className="secondary-color-text bounce ">Fullstack Developer/ Mobile apps developer</p>
                 </div>
                 <div>
                     <p className="text-white mt-5 ">{myBio}</p>
+                </div>
+                <div className="mt-5">
+                    <h3 className="text-white">See my work!</h3>
+                    <img onClick={() => props.scrollTo("projects")} src={Arrow} className=" arrow-down"></img>
                 </div>
             </div>
         </ScrollAnimation>

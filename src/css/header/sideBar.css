@@ -14,7 +14,7 @@
     cursor: pointer;
 }
 .open{
-    width:100%;
+    width:70%;
 }
 .closed{
     width:0%;
@@ -36,7 +36,7 @@
 
 
 .sideBar >div> a {
-    color:#051622;
+    color:white;
    margin: 30px;
     padding: 16px;
     text-align: center;
