@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './header.js';
 import MenuButton from './menu.js';
 import About from './about.js'
-import Projects from './projects.js'
+import Projects from './projects/projects.js'
 import Contact from './contact';
 
 function App() {
