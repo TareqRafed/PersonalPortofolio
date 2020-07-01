@@ -5,6 +5,7 @@ body{
     background-color: #051622;
     height: 100vh;
     margin: 0;
+    
 }
 
 .headline {
@@ -91,6 +92,7 @@ body{
 }
 .tile-img > span {
     padding: 5%;
+    color: var(--main-color);
     
 }
 .tile-img > span:hover{

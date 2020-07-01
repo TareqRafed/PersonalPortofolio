@@ -1,7 +1,7 @@
 .about {
     position: relative;
     top: 0;
-    width: 50%;
+    width: 70%;
     margin: 0 auto 0 auto;
     z-index: 1;
     user-select: none;
@@ -19,24 +19,25 @@
 @media (max-width:768px){
     .fixed-div:first-child{
         height:50px;
+        top:40%;
     }
     .fixed-div{
         height:90px;
     }
     .fixed-div > h1  {
-        font-size: 30px;
+        font-size: 27px;
     }
 }
 
 .about>div {
     position: relative;
-    top: 150px;
+    top: 130px;
 }
 
 @media (max-width:768px) {
     .about>div {
         position: relative;
-        top: 15%;
+        top: 7%;
         font-size: small;
     }
 }

@@ -26,7 +26,7 @@ function App() {
         break;
        case "contact":
           window.scrollTo({
-            top: vh(200),
+            top: vh(220),
             behavior: 'smooth',
           });
           break;

@@ -1,19 +1,20 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import "../css/about/about.css"
 import "../css/about/bounce.css";
 import { animateText } from "./effects/effect.js";
 import ScrollAnimation from 'react-animate-on-scroll';
 import Arrow from "../assets/arrow-down.png";
+import { AiFillGithub, AiFillCodepenCircle, AiTwotoneMail } from 'react-icons/ai';
 
 
 
-
-let myBio = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, `
+let myBio = `I’m curious, and I enjoy work that challenges me to learn something new and stretch in a different direction. I do my best to stay on top of changes in the state of the art so that I can meet challenges with tools well suited to the job at hand.
+ `
 
 function About(props) {
    
 
-    return <div ref={props.ref} className="about">
+    return <div className="about">
         <ScrollAnimation animateIn='fadeIn'>
             <div>
                 <div className="fixed-div">
@@ -26,7 +27,7 @@ function About(props) {
                     <p className="secondary-color-text bounce ">Fullstack Developer/ Mobile apps developer</p>
                 </div>
                 <div>
-                    <p className="text-white mt-5 ">{myBio}</p>
+                    <p className="text-white mt-5 ">{myBio}<hr /><a href="http://github.com/tareqrafed"><AiFillGithub /></a>  <a href="http://codepen.io/tareqrafed"><AiFillCodepenCircle /></a>  <a href="mailto:tareq.rafed22@gmail.com"><AiTwotoneMail /></a></p>
                 </div>
                 <div className="mt-5">
                     <h3 className="text-white">See my work!</h3>

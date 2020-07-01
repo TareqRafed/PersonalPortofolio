@@ -5,7 +5,7 @@ import { animateText } from "../effects/effect.js";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { newProject } from "../projects/newProject.js"
 
-
+// bounce is in css/about/bounce.css
 
 function Projects(props) {
     return <div className="projects">
@@ -13,9 +13,9 @@ function Projects(props) {
 
             <ScrollAnimation animateIn='fadeIn'>
                 <div className="headline">
-                    <h2>{animateText("Check out!")}</h2>
+                    <h2 className="bounce">{animateText("Check out!")}</h2> 
                     <hr />
-                    <p>Here you can see my last projects!</p>
+                    <p>Here you can see my latest projects!</p>
                 </div>
                 <ScrollContainer className="slider">
                     {newProject("https://engineeringgate.com/wp-content/uploads/2019/08/pm-general.jpg","test")}

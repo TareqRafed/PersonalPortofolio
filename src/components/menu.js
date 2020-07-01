@@ -11,8 +11,10 @@ function MenuButton(props) {
     return (
         <div>
         <div className="d-lg-none menu">
-            <img src={MenuIcon} onClick={handleClick()} ></img>    
+            <img src={MenuIcon} onClick={handleClick()} ></img>
+            
         </div> 
+        {isOpen && <div className="blur-effect"></div>}
     
         <div className="sideBar"><Menu scrollTo={props.scrollTo} isOpen={isOpen} handeClick={handleClick()}  /> </div>
         
