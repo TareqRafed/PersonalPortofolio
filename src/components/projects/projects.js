@@ -29,9 +29,8 @@ function Projects(props) {
                     <hr />
                     <p>Here you can see my latest projects!</p>
                 </div>
-                {Loading && <h1 className="text-white">Loading</h1>}
                 <ScrollContainer className="slider">
-                    {ProjectsFromApi} 
+                    {Loading ? <h1>Loading...</h1> : ProjectsFromApi} 
                 </ScrollContainer >
             </ ScrollAnimation>
         </div>

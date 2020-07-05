@@ -71,13 +71,13 @@ body{
 }
 
 .box-tile{
-    height: 20%;
+    height: 10%;
     width: 100%;
     display: flex;
     flex-direction: row;
     position: absolute;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(23, 160, 152, 1);
     z-index: 2;
     text-align: center;
 }
@@ -87,15 +87,14 @@ body{
 .tile-img{
     width: 100%;
     text-align: center;
-    font-size: 30px;
+    line-height: 20px;
     
 }
-.tile-img > span {
+.tile-img > a {
     padding: 5%;
     color: var(--main-color);
     
 }
-.tile-img > span:hover{
+.tile-img > a:hover{
     cursor: pointer;
-    color:var(--secondary-color)
 }

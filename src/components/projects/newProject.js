@@ -17,9 +17,9 @@ const turnProjectIntoJsx = (project) =>{
     <div className="text-white box">
     <div className="box-tile">
         <div className="tile-img">
-          {project.github && <span href={project.github}><AiFillGithub /></span> }  
-          {project.codepen && <span href={project.codepen}><AiFillCodepenCircle /></span >}  
-          {project.other && <span href={project.other}><MdAttachFile /></span> }  
+          {project.github && <a href={project.github}><AiFillGithub /></a> }  
+          {project.codepen && <a href={project.codepen}><AiFillCodepenCircle /></a >}  
+          {project.other && <a href={project.other}><MdAttachFile /></a> }  
         </div>
     </div>
     <img alt='' src={project.background}></img>
