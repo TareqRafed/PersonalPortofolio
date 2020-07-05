@@ -1,13 +1,25 @@
-import React, { useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import ScrollContainer from 'react-indiana-drag-scroll'
 import '../../css/projects.css';
 import { animateText } from "../effects/effect.js";
 import ScrollAnimation from 'react-animate-on-scroll';
-import { newProject } from "../projects/newProject.js"
+import { CreateProjects } from "../projects/newProject.js"
 
 // bounce is in css/about/bounce.css
 
 function Projects(props) {
+    const [ProjectsFromApi, SetProjectFromApi] = useState(null);
+    const [Loading, SetLoading] = useState(true);
+    useEffect(() => {
+        async function fetchData() {
+        const response = fetch('http://192.168.1.20:8000/projects/');
+        const data = (await response).json();
+        SetProjectFromApi(CreateProjects(await data)); // convert json to jsx and assign it to "ProjectsFromApi"
+        SetLoading(false);
+        console.log('is it loading?', Loading);
+        }
+        fetchData();
+      }, []);
     return <div className="projects">
         <div>
 
@@ -17,15 +29,9 @@ function Projects(props) {
                     <hr />
                     <p>Here you can see my latest projects!</p>
                 </div>
+                {Loading && <h1 className="text-white">Loading</h1>}
                 <ScrollContainer className="slider">
-                    {newProject("https://engineeringgate.com/wp-content/uploads/2019/08/pm-general.jpg","test")}
-                    {newProject("https://engineeringgate.com/wp-content/uploads/2019/08/pm-general.jpg","test", "test", "test")}
-                    {newProject("https://engineeringgate.com/wp-content/uploads/2019/08/pm-general.jpg","test", "test", "test")}
-                    {newProject("https://engineeringgate.com/wp-content/uploads/2019/08/pm-general.jpg","test", "test", "test")}
-                    {newProject("https://engineeringgate.com/wp-content/uploads/2019/08/pm-general.jpg","test", "test", "test")}
-                    {newProject("https://engineeringgate.com/wp-content/uploads/2019/08/pm-general.jpg","test", "test", "test")}
-                    {newProject("https://engineeringgate.com/wp-content/uploads/2019/08/pm-general.jpg","test", "test", "test")}
-
+                    {ProjectsFromApi} 
                 </ScrollContainer >
             </ ScrollAnimation>
         </div>

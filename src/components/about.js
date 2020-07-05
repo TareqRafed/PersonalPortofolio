@@ -27,7 +27,7 @@ function About(props) {
                     <p className="secondary-color-text bounce ">Fullstack Developer/ Mobile apps developer</p>
                 </div>
                 <div>
-                    <p className="text-white mt-5 ">{myBio}<hr /><a href="http://github.com/tareqrafed"><AiFillGithub /></a>  <a href="http://codepen.io/tareqrafed"><AiFillCodepenCircle /></a>  <a href="mailto:tareq.rafed22@gmail.com"><AiTwotoneMail /></a></p>
+                    <p className="text-white mt-5 ">{myBio} <hr /> <a href="http://github.com/tareqrafed"><AiFillGithub /></a>  <a href="http://codepen.io/tareqrafed"><AiFillCodepenCircle /></a>  <a href="mailto:tareq.rafed22@gmail.com"><AiTwotoneMail /></a></p>
                 </div>
                 <div className="mt-5">
                     <h3 className="text-white">See my work!</h3>
